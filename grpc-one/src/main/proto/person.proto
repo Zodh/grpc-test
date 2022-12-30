@@ -1,0 +1,18 @@
+syntax = "proto3";                              // Ultima sintaxe (versão do plugin);
+package proto;                                  // Pacote da dependencia;
+
+option java_multiple_files = true;              // Gera multiplas classes; Se false = gera tudo em um só arquivo;
+option java_package = "generated";              // Nome do pacote onde as classes geradas serão alocadas;
+option java_outer_classname = "PersonProtos";    // Nome da classe do wrapper;
+
+service person {
+
+  rpc greet(Message) returns (Empty);
+
+}
+
+message Message {
+  string message = 1;
+}
+
+message Empty {}
