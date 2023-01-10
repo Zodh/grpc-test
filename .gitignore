@@ -23,3 +23,5 @@
 hs_err_pid*
 grpc-one/.idea/
 grpc-one/target/
+poc-grpc/.idea/
+poc-grpc/target/

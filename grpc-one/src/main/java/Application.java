@@ -2,6 +2,7 @@ import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import java.io.IOException;
 import java.util.logging.Logger;
+import service.PersonService;
 
 public class Application {
 
